@@ -32,19 +32,51 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+Developed by:THIRUKUMARAN G 
+RegisterNumber:212223050056
+```
+```
+module de_exp_2(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d) | (a & b & ~c) | (~a & b & d));
+endmodule
+```
+```
+module proj23(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2= ((~y&z)|(w&y)|(x&y));
+endmodule
+```
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+**Truth Table:**
 
-Developed by: RegisterNumber:*/
+*F1*
+
+![2 1 truth table](https://github.com/user-attachments/assets/6a3f7a61-4175-4183-bb22-e91ce1e5bfea)
+
+*F2*
+
+![2 2 truth table](https://github.com/user-attachments/assets/a94b9962-e99c-4028-a265-5c906cca8121)
 
 
-**RTL realization**
+**RTL:**
 
-**Output:**
+*F1*
+![Screenshot 2024-09-13 093739](https://github.com/user-attachments/assets/14fd6235-76f8-4953-b16d-cb6df525c75e)
+*F2*
+![image](https://github.com/user-attachments/assets/3174f551-f14d-4b59-bb16-ed27e4436244)
 
-**RTL**
 
-**Timing Diagram**
+**Timing Diagram:**
+
+*F1*
+![Screenshot 2024-09-13 095350](https://github.com/user-attachments/assets/1b416323-e578-499c-9147-a1f2514fbbcb)
+*F2*
+![image](https://github.com/user-attachments/assets/5ad1ecc7-e1e3-4352-9f83-298cd33bb95b)
+
 
 **Result:**
 
